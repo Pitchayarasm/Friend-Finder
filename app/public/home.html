@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Abril+Fatface|Playfair+Display" rel="stylesheet">
     <title>Freind Finder</title>
     <style>
- 
+        body {
+            background-image: url(https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80);
+            background-size : cover;
+            width: 100%;
+            position:relative;
+            font-family: 'Abril Fatface', cursive;
+        }
         h1 {
             font-family: 'Coiny', cursive;
+            color: white;
+        }
+        p {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
         }
         .jumbotron {
+            background-image: url(https://images.unsplash.com/photo-1533034099809-0d0b33d9ff4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80);
             text-align: center;
-
+            background-size : cover;
+            width: 100%;
+            position:relative;
+        }
+        .btn {
+            background-color: #4aaaa5;
+            border: solid 2px white;
+            color: white;
+        }
+        #f1 {
+            color:rgb(114,137,248);
+        }
+        #f2 {
+            color: rgb(132,87,247);
+        }
+        #f3 {
+            color:rgb(164,72,223);
+        }
+        #f4 {
+            color:rgb(205,83,186);
         }
     </style>
 </head>
-<body>
+<body> 
    <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4"><i class="fas fa-user-friends"></i> Friend Finder</h1>
-            <hr class="my-4">
-            <p>Answer a few basic questions.</p>
-            <p>Then find the friend with the greatest compatibility!</p>
-            <a class="btn btn-primary btn-lg" href="/survey" role="button"><i class="fas fa-poll-h"></i> Go to Survey</a>
+            <h1 class="display-4"><i class="fas fa-user-friends"></i> <span id="f1">Fri</span><span id="f2">end</span> <span id="f3">Fin</span><span id="f4">der</span> </h1>
+            <strong><p> Answer a few basic questions.</p>
+            <p>Then find the friend with the greatest compatibility!</p></strong>
+            <a class="btn btn-lg mt-4" href="/survey" role="button"><i class="fas fa-poll-h"></i> Go to Survey</a>
         </div>
    </div>
    <footer class="footer">
-        <div class="container">
+        <div class="container" id="footer">
             <a href="/api/friendlist">API Friend List</a> | <a href="https://github.com/Pitchayarasm/Friend-Finder">Github Repo</a>
         </div>
    </footer>
